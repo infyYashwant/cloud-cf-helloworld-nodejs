@@ -22,5 +22,11 @@
 		"color": "blue",
 		"material": "steel",
 		"id": 3
+	},
+	{
+		"name": "Deep",
+		"color": "Red",
+		"material": "cotton",
+		"id": 4
 	}
 ]
