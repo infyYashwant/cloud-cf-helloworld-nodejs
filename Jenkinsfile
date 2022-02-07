@@ -12,7 +12,6 @@ try {
             cloudFoundryDeploy script: this
         }
     }
-}
 } finally {
 	node {
 		mailSendNotification script: this
