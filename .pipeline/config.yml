@@ -1,4 +1,5 @@
 general:
+  gitSshKeyCredentialsId: '40a17ad8-d345-46d2-b416-098d04961f02'
 steps:
   mtaBuild:
     buildTarget: 'CF'
