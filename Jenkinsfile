@@ -8,14 +8,7 @@ node() {
 		mtaBuild script: this
 	}
 	stage('deploy') {
-		steps {
-			cloudFoundryDeploy script: this
-		}
-		
-		post {
-			always {
-				mailSendNotification script: this
-			}
-		}
+		cloudFoundryDeploy script: this
+		mailSendNotification script: this
 	}	    
 }
