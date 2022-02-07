@@ -11,6 +11,7 @@ node() {
     stage('deploy') {
         cloudFoundryDeploy script: this
     }
+    stage('feedback') {
+        mailSendNotification script: this
+    }
 }
-stage 'post-build'
-
