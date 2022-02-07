@@ -12,10 +12,7 @@ try {
 			cloudFoundryDeploy script: this
 		}	    
 	}
-}
-catch {
-}
-finally {
+} finally {
 	node() {
 		mailSendNotification script: this	
 	}
