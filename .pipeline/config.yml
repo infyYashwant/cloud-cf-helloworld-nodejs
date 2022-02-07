@@ -6,7 +6,9 @@ steps:
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
     deployType: 'standard'
-    cloudFoundry:
-      org: '7341779btrial'
-      space: 'dev'
-      credentialsId: '01ad9144-8004-4bc2-9249-93e647468fee'
+  cloudFoundry:
+    org: '7341779btrial'
+    space: 'dev'
+    credentialsId: '01ad9144-8004-4bc2-9249-93e647468fee'
+  sendNotificationMail:
+    wrapInNode: true
