@@ -11,9 +11,9 @@ try {
         stage('deploy') {
             cloudFoundryDeploy script: this
         }
-    }
-} finally {
-	node {
+	post {
+            always {
 		mailSendNotification script: this
-	}
+	    }
+	}	    
 }
