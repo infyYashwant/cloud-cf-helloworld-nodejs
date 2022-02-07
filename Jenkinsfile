@@ -1,17 +1,20 @@
 @Library('piper-lib-os') _
-node() {
-    stage('prepare') {
-        checkout scm
-        setupCommonPipelineEnvironment script:this
+try {
+    node() {
+        stage('prepare') {
+            checkout scm
+            setupCommonPipelineEnvironment script:this
+        }
+        stage('build') {
+            mtaBuild script: this
+        }
+        stage('deploy') {
+            cloudFoundryDeploy script: this
+        }
     }
-    stage('build') {
-        mtaBuild script: this
-    }
-
-    stage('deploy') {
-        cloudFoundryDeploy script: this
-    }
-    stage('feedback') {
-        mailSendNotification script: this
-    }
+}
+} finally {
+	node {
+		mailSendNotification script: this
+	}
 }
