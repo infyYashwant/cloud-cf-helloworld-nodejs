@@ -28,5 +28,11 @@
 		"color": "Red",
 		"material": "cotton",
 		"id": 4
+	},
+	{
+		"name": "YP",
+		"color": "Black",
+		"material": "Wool",
+		"id": 5
 	}
 ]
