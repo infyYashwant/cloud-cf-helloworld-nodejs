@@ -34,5 +34,11 @@
 		"color": "Black",
 		"material": "Wool",
 		"id": 5
+	},
+	{
+		"name": "YP TEST",
+		"color": "NavyBlue",
+		"material": "Random",
+		"id": 6
 	}
 ]
