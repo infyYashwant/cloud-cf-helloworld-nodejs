@@ -16,29 +16,5 @@
 		"color": "green",
 		"material": "polyester",
 		"id": 2
-	},
-	{
-		"name": "Yashwant",
-		"color": "blue",
-		"material": "steel",
-		"id": 3
-	},
-	{
-		"name": "Deep",
-		"color": "Red",
-		"material": "cotton",
-		"id": 4
-	},
-	{
-		"name": "YP",
-		"color": "Black",
-		"material": "Wool",
-		"id": 5
-	},
-	{
-		"name": "YP TEST",
-		"color": "NavyBlue",
-		"material": "Random",
-		"id": 6
 	}
 ]
